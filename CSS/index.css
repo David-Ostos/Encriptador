@@ -1,0 +1,22 @@
+#superficie{
+
+}
+
+#logo{
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+
+}
+
+#rodapie{
+    position:relative; 
+    margin:auto; 
+    width:960px;
+    float:left;
+    position:fixed; 
+    bottom:0; 
+    z-index:999999;
+}
