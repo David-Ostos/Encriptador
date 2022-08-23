@@ -2,50 +2,61 @@
 <html lang="en">
 
     <head>
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="CSS/index.css">
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/style.css">
 
         <title>Challenges Encriptador</title>
-
     </head>
 
     <body>
 
-        
-        
         <main>
-        
-            <div id="logo">
+
+        <section>
+            <div class="logo">
                 <img src="imagenes/Logo.png" >
             </div>
 
-            <div id="area_txt_des/encriptado">
+            <textarea class="input-texto" cols="40" rows="6" placeholder="Ingrese el texto aquí"></textarea>
 
+            <div class="botones">
 
-            </div>
-            <div id="boton_encriptado">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Encriptar
+                </button>
+
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Desencriptar
+                </button>
                 
             </div>
 
-            <div id="boton_desencriptado">
+            <textarea class="mensaje" cols="18" rows="8"></textarea>
+
+         
+        </section>
+
+        <section>
+
+        </section>
+
+            <div class="boton_desencriptado">
 
             </div>
             
-            <div id="area_mostrar_txt_en/des">
+            <div class="area_mostrar_txt_en/des">
 
             </div>
 
-            <footer id="rodapie">
+            <footer class="rodapie">
                 <p>Rodapie</p>
             </footer>
         
+            <script src="index.js"></script>
         </main>
-
-
     </body>
-
 </html>

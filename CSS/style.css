@@ -1,0 +1,94 @@
+body{
+
+    width: 1440px;
+    height: 1024px;
+}
+
+.logo{
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+
+}
+
+.input-texto{
+
+    position: absolute;
+    width: 577px;
+    height: 47px;
+    top: 168px;
+    left: 240px;
+}
+
+.mensaje{
+
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    top: 40px;
+    left: 1000px;
+    border-radius: 32px;
+}
+
+.botones{
+
+    width: 700px;
+    height: 67px;
+    top: 885px;
+    left: 240px;
+    gap: 24px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.encriptar{
+
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    gap: 8px;
+    background: #0A3871;
+    color: #ffffff;
+    transition: 400ms;
+    font-size: 1.5em;
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 24px;  
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+.encriptar:hover{
+
+    transform: scale(1.05);
+}
+
+
+.area_mostrar_txt_en/des{
+
+    display: inline-block;
+}
+
+.rodapie{
+    
+    width:auto;
+    position:absolute; 
+    top: 980px; 
+    display: inline-block;
+    right: 50%;
+    margin: 0 0 40px 0px ;
+
+    
+}
