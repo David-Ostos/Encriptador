@@ -1,7 +1,7 @@
 body{
 
-    width: 1440px;
-    height: 1024px;
+    width: auto;
+    height: auto;
 }
 
 .logo{
@@ -51,24 +51,22 @@ body{
 
     width: 328px;
     height: 67px;
+    left: 240px;
+    top: 885px;
     border-radius: 24px;
-    gap: 8px;
     background: #0A3871;
-    color: #ffffff;
+ 
+   /*display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;  */
+    gap: 8px;
     transition: 400ms;
     font-size: 1.5em;
     text-align: center;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 8px;
-    padding: 24px;  
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    
+    color: #ffffff;
 }
+
 
 .encriptar:hover{
 
@@ -83,12 +81,12 @@ body{
 
 .rodapie{
     
-    width:auto;
-    position:absolute; 
+    position:relative; 
     top: 980px; 
-    display: inline-block;
-    right: 50%;
-    margin: 0 0 40px 0px ;
+    margin: 84px 0 0 0 ;
+    background: #cccccc;
+    padding: 40px;
+    text-align: center;
 
     
 }
