@@ -9,9 +9,11 @@ const mensaje = document.querySelector(".mensaje");
 `La letra "u" es convertida para "ufat"`
 */
 
-function btnEncriptar(){
-
-    
+function btnEncriptar() {
+    const textoEncriptado = encriptar(inputTexto.value)
+    mensaje.value = textoEncriptado;
+    mensaje.style.background = "none";
+    inputTexto.value = "";
 }
 
 function encriptar (stringEncriptada){
