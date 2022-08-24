@@ -31,7 +31,12 @@ body{
     top: 40px;
     left: 1000px;
     border-radius: 32px;
+    padding: 20px;    
+    background:url(https://i.imgur.com/dHYOBeC.png);
+    background-repeat: no-repeat;
+    background-position: 50% ;
 }
+
 
 .botones{
 
