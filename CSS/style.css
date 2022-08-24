@@ -78,6 +78,26 @@ body{
     transform: scale(1.05);
 }
 
+.desencriptar{
+
+    width: 328px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
+    border-radius: 24px;
+    background: #cccccc;
+ 
+   /*display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;  */
+    gap: 8px;
+    transition: 400ms;
+    font-size: 1.5em;
+    text-align: center;
+    color: #ffffff;
+}
+
 
 .area_mostrar_txt_en/des{
 
