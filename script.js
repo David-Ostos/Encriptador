@@ -1,5 +1,6 @@
 const inputTexto = document.querySelector(".input-texto");
 const mensaje = document.querySelector(".mensaje");
+const caja = document.querySelector(".cajaGuia")
 
 /*
 `La letra "e" es convertida para "enter"`
@@ -12,7 +13,8 @@ const mensaje = document.querySelector(".mensaje");
 function btnEncriptar() {
     const textoEncriptado = encriptar(inputTexto.value)
     mensaje.value = textoEncriptado;
-    mensaje.style.background = "none";
+    mensaje.style.background = "#ffffff";
+    caja.style.content = ""
     inputTexto.value = "";
 }
 
