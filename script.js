@@ -56,10 +56,9 @@ function desencriptar (stringDesencriptada){
 
 function copiar(){
 
+
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value);
     mensaje.value = "";
-    toastr.warning("mensaje copiado")
+
 }
-
-
