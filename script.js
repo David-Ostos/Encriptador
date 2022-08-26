@@ -1,5 +1,5 @@
 const inputTexto = document.querySelector(".input-texto");
-const mensaje = document.querySelector(".mensaje");
+const mensaje = document.querySelector(".mensaje_txt");
 const caja = document.querySelector(".cajaGuia")
 
 /*
@@ -14,7 +14,7 @@ function btnEncriptar() {
     const textoEncriptado = encriptar(inputTexto.value)
     mensaje.value = textoEncriptado;
     mensaje.style.background = "#ffffff";
-    caja.style.content = ""
+    caja.innerHTML = ""
     inputTexto.value = "";
 }
 
@@ -56,9 +56,10 @@ function desencriptar (stringDesencriptada){
 
 function copiar(){
 
-    mensaje.select()
-    navigator.clipboard.writeText(mensaje.value)
+    mensaje.select();
+    navigator.clipboard.writeText(mensaje.value);
     mensaje.value = "";
-    alert("Texto copiado");
-
+    toastr.warning("mensaje copiado")
 }
+
+
