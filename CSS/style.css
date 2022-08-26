@@ -1,7 +1,11 @@
 body{
+    font-family: 'Montserrat', sans-serif;
 
-    width: auto;
+    display: flex;
+    flex-direction: column;
+    background: #dddddd;
     height: auto;
+    
 }
 
 .logo{
@@ -21,20 +25,62 @@ body{
     height: 47px;
     top: 168px;
     left: 240px;
+    border: none;
+    color: #0A3871;
+    font-size: 3em;
+    font-weight: 400;
+    background: #dddddd;
+    outline: none;
+
 }
+
+.mensaje_txt{
+    
+    background: #ffffff;  
+    background-image:url(https://i.imgur.com/dHYOBeC.png);
+    background-repeat: no-repeat;
+    background-position: 50% 33%;
+    width: 91%;
+    height: 84%;
+    border: none; 
+    border-radius: 30px;
+    padding: 20px;
+    outline: none;
+}
+
 
 .mensaje{
 
     position: absolute;
-    width: 400px;
-    height: 944px;
-    top: 40px;
-    left: 1000px;
+    width: 25%;
+    height: 90%;
+    top: 5%;
+    left: 63%;
     border-radius: 32px;
     padding: 20px;    
-    background:url(https://i.imgur.com/dHYOBeC.png);
-    background-repeat: no-repeat;
-    background-position: 50% ;
+    background: #ffffff;  
+    
+}
+
+
+.cajaGuia{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    position: absolute;
+    width: auto;
+    top: 55%;
+}
+
+.cajaGuia h2{
+
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
 }
 
 
@@ -42,8 +88,8 @@ body{
 
     width: 700px;
     height: 67px;
-    top: 885px;
-    left: 240px;
+    top: 90%;
+    left: 10%;
     gap: 24px;
     position: absolute;
     display: flex;
@@ -54,10 +100,8 @@ body{
 
 .encriptar{
 
-    width: 328px;
-    height: 67px;
-    left: 240px;
-    top: 885px;
+    width: 50%;
+    height: 100%;
     border-radius: 24px;
     background: #0A3871;
  
@@ -80,12 +124,11 @@ body{
 
 .desencriptar{
 
-    width: 328px;
-    height: 67px;
-    left: 240px;
-    top: 885px;
+    width: 50%;
+    height: 100%;
     border-radius: 24px;
-    background: #cccccc;
+    background: #ffffff;
+    color: #0A3871;
  
    /*display: flex;
     flex-direction: row;
@@ -95,23 +138,133 @@ body{
     transition: 400ms;
     font-size: 1.5em;
     text-align: center;
-    color: #ffffff;
+    transition: 400ms;
 }
 
+.desencriptar:hover{
 
-.area_mostrar_txt_en/des{
+    transform: scale(1.05);
+}
+
+.copiar{
+
+    position: absolute;
+    display: inline;
+    top: 90%;
+    left: 10%;
+    width: 80%;
+    height: 7%;
+    border-radius: 24px;
+    background: none;
+    font-size: 1.4em;
+    color: #0A3871;
+    transition: all 400ms ease;
+}
+
+.copiar:hover{
+
+    transform: scale(1.05);
+}
+
+.Rodapie{
+    /*display: flex;
+    flex-direction: row;*/
+    width: 100%;
+    position:absolute; 
+    bottom: -40%; 
+    background-color: #0A3871;
+}
+
+.Rodapie .grupo-1{
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 31%);
+    grid-gap: 50px ;
+    padding: 45px 0;
+}
+
+.Rodapie .grupo-1 .box figure{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.Rodapie .grupo-1 .box figure img{
+
+    width: 200px;
+    
+}
+
+.Rodapie .grupo-1 .box h2{
+
+    color : #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Rodapie .grupo-1 .box p {
+
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.Rodapie .grupo-1 .red-social{
+    padding: 0px 0 0 20%;
+}
+
+.Rodapie .grupo-1 .red-social a{
 
     display: inline-block;
-}
-
-.rodapie{
-    
-    position:relative; 
-    top: 980px; 
-    margin: 84px 0 0 0 ;
-    background: #cccccc;
-    padding: 40px;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color : #fff;
+    margin-right: 10px;
+    background-color:#356EA9 ;
+    border-radius: 10px;
+    font-size: 20px;
     text-align: center;
-
-    
+    transition: all 400ms ease;
 }
+
+.Rodapie .grupo-1 .red-social a:hover{
+
+    color: aqua;
+    transform: scale(1.2);
+}
+
+.Rodapie .grupo-2{
+
+    background:#356EA9;
+    color:#ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.Rodapie .grupo-2 small{
+
+    font-size: 15px;
+
+}
+
+.Rodapie .grupo-2 small b{
+    font-weight: bold;
+}
+@media screen and (max-width:800px){
+
+.Rodapie .grupo-1{
+
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px ;
+    padding: 35px 0;
+}
+}
+
